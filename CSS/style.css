@@ -55,6 +55,29 @@ nav a:focus {
     padding: 20px;
 }
 
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.card {
+    flex: 1 1 220px;
+    border: 2px solid #222;
+    border-radius: 8px;
+    padding: 16px;
+    color: #222;
+}
+
+.card-1 { background-color: #fff3cd; }
+.card-2 { background-color: #d1ecf1; }
+.card-3 { background-color: #d4edda; }
+
+.card a {
+    color: #123b70;
+    font-weight: bold;
+}
+
 .sidebar{
     grid-area: sidebar;
     background-color: #e95b5b;
