@@ -1,0 +1,48 @@
+body {
+  background-color: #f5f5f5;
+  font-family: Arial, sans-serif;
+}
+
+.canvas {
+  border: 1px solid #ccc;
+  height: 100vh;
+  width: 50vh;
+  padding: 40%;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+  }
+  50% {
+    transform: translateY(50vh);
+    -webkit-transform: translateY(50vh);
+  }
+  100% {
+    transform: translateY(1vh);
+    -webkit-transform: translateY(1vh);
+  }
+}
+.ball {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: black;
+  animation: bounce 1s infinite;
+}
+@supports (-ms-ime-align: auto) or ((-webkit-appearance: none) and (not (-moz-appearance: none))) {
+  .ball {
+    background-color: blue;
+  }
+}
+@supports (-webkit-appearance: none) {
+  .ball {
+    background-color: black;
+  }
+}
+@supports selector(:-moz-window-inactive) {
+  .ball {
+    background-color: red;
+  }
+}/*# sourceMappingURL=style.css.map */
